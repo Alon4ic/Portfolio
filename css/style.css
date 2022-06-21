@@ -1,0 +1,119 @@
+/* :root {
+	--primary-color: #c59eff;
+	--box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+	--border: 1px solid blue;
+	--margin-top: 16px;
+	--margin-bottom: 16px;
+}
+h1 {
+	color: var(--primary-color);
+	box-shadow: var(--box-shadow);
+}
+a {
+	color: red;
+	text-decoration: none;
+	border: var(--border);
+	margin-top: 10px;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: green;
+}
+ P {
+	 width: 300px;
+	 background:  var(--primary-color);
+	 color: #fff;
+	 padding: 5px;
+	 box-shadow: var(--box-shadow);
+ }
+.citys {
+	display: flex;
+	/* flex-direction: row;
+	flex-direction: column; */
+	/* justify-content: space-between;
+} */ 
+:root {
+	--firstcolor: #6c63ff;
+	--secondcolor: #f5f2fe;
+	--threecolor: #ffffff;
+	--box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+body {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+h1 {
+	font-size: 80px;
+	text-align: center;
+	margin: 0;
+}
+h2 {
+	text-align: center;
+	font-size: 50px;
+	margin: 0;
+}
+h3 {
+	font-size: 24px;
+	opacity: 0.7;
+	margin: 0;
+	text-align: center;
+}
+.container {
+	margin: 60px auto;
+	max-width: 800px;
+}
+.homepage {
+	display: block;
+	color: var(--firstcolor);
+	text-align: center;
+}
+.about-content {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 40px 0;
+}
+.about-item {
+	background: var(--secondcolor);
+	padding: 15px;
+	margin: 0 18px;
+	text-align: center;
+}
+.my-contact {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: var(--firstcolor);
+	font-size: 26px;
+	cursor: pointer;
+	margin: 0;
+}
+.my-contact:hover {
+	text-decoration: underline;
+}
+.contacts {
+	display: flex;
+	margin-top: 45px;
+	justify-content: center;
+}
+.contact-item,
+.about-link {
+	text-decoration: none;
+	padding: 20px 15px;
+	margin: 20px;
+	border-radius: 5px;
+}
+.contact-item {
+	background: var(--firstcolor);
+	color: var(--threecolor);
+	box-shadow: var(--box-shadow);
+
+}
+.about-link {
+	color: var(--firstcolor);
+	border: 1px solid var(--firstcolor);
+}
