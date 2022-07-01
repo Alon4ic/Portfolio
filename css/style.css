@@ -1,72 +1,52 @@
-/* :root {
-	--primary-color: #c59eff;
-	--box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-	--border: 1px solid blue;
-	--margin-top: 16px;
-	--margin-bottom: 16px;
-}
-h1 {
-	color: var(--primary-color);
-	box-shadow: var(--box-shadow);
-}
-a {
-	color: red;
-	text-decoration: none;
-	border: var(--border);
-	margin-top: 10px;
-}
 
-a:hover {
-	color: blue;
-	text-decoration: underline;
-}
-
-a:visited {
-	color: green;
-}
- P {
-	 width: 300px;
-	 background:  var(--primary-color);
-	 color: #fff;
-	 padding: 5px;
-	 box-shadow: var(--box-shadow);
- }
-.citys {
-	display: flex;
-	/* flex-direction: row;
-	flex-direction: column; */
-	/* justify-content: space-between;
-} */ 
 :root {
-	--firstcolor: #6c63ff;
-	--secondcolor: #f5f2fe;
+	--firstcolor: #c3b9f2;
+	--secondcolor: #9973b0;
 	--threecolor: #ffffff;
+	--maincolor: #2b023af9;
 	--box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
 body {
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 	font-size: 18px;
 }
-h1 {
-	font-size: 80px;
+h1.text-center {
+	font-size: 70px;
 	text-align: center;
 	margin: 0;
+	color: var(--maincolor);
 }
-h2 {
+h2.text-center {
 	text-align: center;
 	font-size: 50px;
 	margin: 0;
+	color: var(--maincolor);
 }
-h3 {
+h3.text-center {
 	font-size: 24px;
 	opacity: 0.7;
 	margin: 0;
 	text-align: center;
+	color: var(--maincolor);
 }
 .container {
-	margin: 60px auto;
+	margin: 0 auto;
 	max-width: 800px;
 }
+nav.navbar-light {
+	background-color: #c3b9f2 !important;
+}
+.navbar-brand {
+	display: block;
+	flex-grow: 4;
+}
+span.brend-link,
+span.brend-name {
+	font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 16px;
+	color:#2b023af9;
+}
+
 .homepage {
 	display: block;
 	color: var(--firstcolor);
@@ -108,12 +88,26 @@ h3 {
 	border-radius: 5px;
 }
 .contact-item {
-	background: var(--firstcolor);
+	background: #9973b0;
 	color: var(--threecolor);
 	box-shadow: var(--box-shadow);
 
 }
+.contact-item:hover {
+	background-color: rgb(92, 3, 121);
+	color: var(--threecolor)
+}
 .about-link {
-	color: var(--firstcolor);
-	border: 1px solid var(--firstcolor);
+	color: #9973b0;
+	border: 1px solid #9973b0;
+}
+.about-link:hover {
+	color: rgb(92, 3, 121);
+	border: 1px solid rgb(92, 3, 121);
+
+}
+.section {
+	background-color: rgb(244, 240, 247);
+	padding-top: 60px;
+	padding-bottom: 20px;
 }
