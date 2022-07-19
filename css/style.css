@@ -6,6 +6,10 @@
 	--maincolor: #f4ebf7f9;
 	--linkcolor: #4b494b;
 	--box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+	--font-family: "Roboto",
+	Arial,
+	Helvetica,
+	sans-serif;
 }
 
 body {
@@ -100,9 +104,8 @@ i {
 }
 
 .container {
-	
 	margin: 0 auto;
-	max-width: 900px;
+	max-width: 1200px;
 }
 
 .homepage {
@@ -158,8 +161,7 @@ i {
 	padding-right: 30px;
 }
 .hero-container {
-	margin-left: 80px;
-	margin-right: 80px;
+	margin: 0 auto;
 	max-width: 1200px;	
 }
 .hero-card__first,
@@ -210,18 +212,22 @@ i {
 	background-color: var(--linkcolor);
 	color: var(--maincolor);
 }
-.hero-light {
+.light-offer {
+	height: 100px;
+	width: 900px;
+}
+.light-box {
 	display: flex;
 	justify-content: center;
-	margin-bottom: -120px;
+	margin-bottom: -30px;
 }
 
-.hero-item {
-	margin-bottom: -30px;
+.light-item {
+	margin-bottom: -60px;
 	margin-top: 90px;
 }
 
-.hero-btn {
+.light-btn {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
@@ -234,10 +240,10 @@ i {
 	box-shadow: 0 0 1em 0.5em rgb(0 0 0 / 20%);
 	transition: all 0.4s;
 }
-.hero-btn:hover {
+.light-btn:hover {
 	background-color: var(--linkcolor);
 }
-.hero-link {
+.light-link {
 	font-family: "Roboto",
 	Arial,
 	Helvetica,
@@ -246,6 +252,10 @@ i {
 	font-weight: 500;
 	color: var(--maincolor);
 	text-decoration: none;
+}
+.light-link:hover {
+	font-size: 20px;
+	color: var(--maincolor);
 }
 .about-hero {
 	background-color: var(--secondcolor);
@@ -388,8 +398,8 @@ i {
 }
 .benefits-card {
 	padding: 5px;
-	background-color: rgb(182, 182, 182);
-	background-image: linear-gradient(311deg, rgba(219, 235, 242, 0.23), rgba(60, 61, 62, 0.1));
+	background-color: var(--maincolor);
+	
 	border-radius: 3px;
 	box-shadow: 0 0 5px 3px rgb(0 0 0 / 10%);
 }
@@ -412,10 +422,7 @@ i {
 	text-align: center;
 }
 .contact-item, .about-link {
-	font-family: "Roboto",
-	Arial,
-	Helvetica,
-	sans-serif;
+	font-family: var(--font-family);
 	font-size: 18px;
 	text-decoration: none;
 	padding: 10px 15px;
@@ -433,9 +440,101 @@ i {
 	background-color: #4b494b;
 	color: var(--maincolor);
 	box-shadow: var(--box-shadow);
-	border: 1px solid var(--maincolor);
 }
-
+.light-offer {
+	display: block;
+	margin: 0 auto;
+}
+.offer-btn {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border-radius: 15px;
+	background-color: var(--secondcolor);
+	border: 1px solid var(--threecolor);
+	box-shadow: var(--box-shadow);
+	background-image: linear-gradient(311deg, rgba(219, 235, 242, 0.23), rgba(60, 61, 62, 0.1))
+}
+.offer-link {
+	font-family: var(--font-family);
+	color: var(--maincolor);
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+}
+.offer-link:hover {
+	color: var(--maincolor);
+	font-size: 18px;
+}
+.light-offer {
+	background-color:var(--threecolor);
+	padding-bottom: 240px;
+	border-radius: 15px;
+}
+.hero-inner__title {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.offer-inner__img {
+	width: 55px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.main {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.main-link {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.main-box__title {
+	font-size: 50px;
+	color: var(--maincolor);
+}
+.main-box__icon {
+	width: 60px;
+	height: 60px;
+	padding-right: 10px;
+}
+.main-box__inner {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+.main-box__btn {
+	width: 200px;
+	border-radius: 10px;
+	background-color: var(--threecolor);
+	background-image: linear-gradient(311deg, rgba(219, 235, 242, 0.23), rgba(60, 61, 62, 0.1));
+	border: none;
+	box-shadow: var(--box-shadow);
+}
+.main-box__btn:hover {
+	background-color: var(--linkcolor);
+}
+.main-box__link {
+	font-family: var(--font-family);
+	font-size: 18px;
+	text-decoration: none;
+	color: var(--maincolor);
+	font-weight: 500;
+}
+.main-box__link:hover {
+	color: var(--maincolor);
+	font-size: 20px;
+}
+.main-box__img {
+	max-width: 40px;
+	margin-right: 15px;
+}
+.main-offer {
+	margin-bottom: 80px;
+}
 @keyframes fadeInUp {
 	from {
 		transform: translate3d(0, 60px, 0)
@@ -489,7 +588,7 @@ i {
 .footer {
 	background-color: rgb(24, 17, 29);
 	position: relative;
-	color: white;
+	color: var(--maincolor);
 }
 
 .fa-instagram {

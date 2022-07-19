@@ -20,4 +20,9 @@ $(function(){
           ]
         });
 });
-Footer
+
+gsap.to('path', {
+  strokeDashoffset: -3,
+  repeat: -1,
+  ease: 'none'
+})

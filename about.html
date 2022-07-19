@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img class="navbar-img" src="images/A.png" title="Home">Olena Redko</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -32,6 +32,9 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" aria-current="page" href="about.html" title="About Olena Redko">About me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="about.html#my-works" title="About Olena Redko">My works</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" aria-current="page" href="my-skills.html" title="My skills">My skills</a>
@@ -69,7 +72,7 @@
 			</div>
 		</div>
 	</div>
-	<section class="carousel">
+	<section class="carousel" id="works">
 		<div class="container">
 			<h2 class="carousel-title">
 				My works
@@ -81,7 +84,7 @@
 						<a class="carousel-item__link" href="https://alon4ic.github.io/new-project/">Harry Potter Club</a>
 					</div>
 				</div>
-				<div class="carousel__item">
+				<div class="carousel__item" id="my-works">
 					<div class="carousel__item-box">
 						<a href=""><img class="img-fluid p-1 rounded shadow carousel-item__img" src="images/Example1.png" alt="Weather app"></a>
 						<a class="carousel-item__link" href="">Weather app</a>
@@ -108,10 +111,20 @@
 			</div>
 		</div>
 	</section>
-	<div class="about-contact" id="contact">
-		<h2 class="text-center animated animatedFadeInUp fadeInUp">📮 Contact me</h2>
-		<a class="my-contact mb-5 animated animatedFadeInUp fadeInUp" href="mailto:o.redjko@gmail.com"
-			title="Email Olena Redko">o.redjko@gmail.com</a>
+	<div class="light-offer main-offer">
+		<div class="container">
+			<div class="hero-inner__title">
+				<div data-aos="fade-right">Let's work</div>
+				<div data-aos="flip-up">
+					<img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+						class="offer-inner__img" src="images/handshake.png" alt="works">
+				</div>
+				<div data-aos="fade-left">together!</div>
+			</div>
+			<button class="offer-btn">
+				<a class="offer-link" href="my-skills.html">
+					Examples my work</a></button>
+		</div>
 	</div>
 	<footer class="footer">
 		<div class="container">
