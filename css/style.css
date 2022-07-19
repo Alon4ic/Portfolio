@@ -54,6 +54,7 @@ p {
 nav.navbar-light {
 	background-color: #1a1818 !important;
 	border-bottom: 2px solid #000;
+	width: 100%;
 }
 
 h2.my-name {
@@ -74,6 +75,7 @@ a.navbar-brand:hover {
 
 a.nav-link {
 	color: var(--maincolor);
+	transition: all 0.6s;
 }
 
 a.nav-link:hover {
@@ -202,6 +204,7 @@ i {
 	padding-top: 5px;
 	background-color: var(--threecolor);
 	background-image: linear-gradient(311deg, rgba(219, 235, 242, 0.23), rgba(60, 61, 62, 0.1));
+	transition: all 0.4s;
 }
 .link-harry:hover {
 	background-color: var(--linkcolor);
@@ -229,6 +232,7 @@ i {
 	background-color: var(--threecolor);
 	background-image: linear-gradient(311deg, rgba(219, 235, 242, 0.23), rgba(60, 61, 62, 0.1));
 	box-shadow: 0 0 1em 0.5em rgb(0 0 0 / 20%);
+	transition: all 0.4s;
 }
 .hero-btn:hover {
 	background-color: var(--linkcolor);
@@ -272,18 +276,23 @@ i {
 .carousel__item {
 	margin: 0 7px;
 }
-
+.carousel-title {
+	font-size: 60px;
+}
 .carousel__item-box {
 	border: 1px solid var(--maincolor);
 	padding: 6px 6px 16px 6px;
 	text-align: center;
 	transition: all 0.3s;
+	box-shadow: var(--box-shadow);
+	transition: all 0.4s;
 }
 
 .carousel__item-box:hover {
 	color: #fff;
-	background: #856172;
-	border: 1px solid #30233a;
+	background-color: var(--threecolor);
+	background-image: linear-gradient(311deg, rgba(219, 235, 242, 0.23), rgba(60, 61, 62, 0.1));
+	border: 1px solid var(--maincolor);
 	cursor: pointer;
 }
 .carousel-item__img {
@@ -308,13 +317,19 @@ i {
 	height: 25px;
 	border-radius: 50%;
 	transition: all 0.4s;
-	border: 1px solid var(--firstcolor)
+	border: 1px solid var(--firstcolor);
 }
 
 .carousel .slick-active button {
-	background: #856172;
+	background-color: var(--threecolor);
+	background-image: linear-gradient(311deg, rgba(219, 235, 242, 0.23), rgba(60, 61, 62, 0.1));
+	border: 1px solid var(--maincolor);
 }
 .carousel-item__link {
+	color: var(--maincolor);
+	text-decoration: none;
+}
+.carousel-item__link:hover {
 	color: var(--maincolor);
 	text-decoration: none;
 }
@@ -336,14 +351,16 @@ i {
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
-	color: var(--firstcolor);
+	color: var(--maincolor);
 	font-size: 26px;
 	cursor: pointer;
 	margin: 0;
+	transition: all 0.4s;
 }
 
 .my-contact:hover {
 	text-decoration: underline;
+	color: var(--maincolor);
 }
 
 .contacts {
@@ -409,6 +426,7 @@ i {
 	font-weight: 500;
 	box-shadow: var(--box-shadow);
 	background-image: linear-gradient(311deg, rgba(219, 235, 242, 0.23), rgba(60, 61, 62, 0.1));
+	transition: all 0.4s;
 }
 
 .contact-item:hover, .about-link:hover {
@@ -498,6 +516,7 @@ i {
 	font-size: 16px;
 	text-decoration: none;
 	color: var(--maincolor);
+	transition: all 0.4s;
 }
 
 .social-link:hover {
