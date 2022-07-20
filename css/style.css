@@ -539,6 +539,18 @@ i {
 .main-offer {
 	margin-bottom: 80px;
 }
+.new-box {
+	padding-top: 60px;
+}
+.light-main {
+	padding-bottom: 300px;
+}
+.offer-inner__text {
+	color: var(--maincolor);
+	font-size: 18px;
+	text-align: center;
+	margin-top: -10px;
+}
 @keyframes fadeInUp {
 	from {
 		transform: translate3d(0, 60px, 0)
@@ -751,7 +763,9 @@ i {
 	}
 }
 @media (max-width: 432px) {
-
+	.offer-inner__text {
+		font-size: 14px;
+	}
 }
 @media (max-width: 362px) {
 	.section-text {
