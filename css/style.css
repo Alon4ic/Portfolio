@@ -21,6 +21,7 @@ body {
 	display: block;
 	margin: 0 auto;
 	transition-duration: 0.8s;
+	height: 100vh;
 }
 
 h1.text-center {
@@ -219,11 +220,10 @@ i {
 .light-box {
 	display: flex;
 	justify-content: center;
-	margin-bottom: -30px;
+	margin-bottom: -80px;
 }
 
 .light-item {
-	margin-bottom: -60px;
 	margin-top: 90px;
 }
 
@@ -398,8 +398,8 @@ i {
 }
 .benefits-card {
 	padding: 5px;
-	background-color: var(--maincolor);
-	
+	border: 1px solid var(--maincolor);
+	background-color: #6e7582;
 	border-radius: 3px;
 	box-shadow: 0 0 5px 3px rgb(0 0 0 / 10%);
 }
@@ -444,6 +444,7 @@ i {
 .light-offer {
 	display: block;
 	margin: 0 auto;
+	max-width: 100%;
 }
 .offer-btn {
 	display: block;
@@ -470,6 +471,9 @@ i {
 	background-color:var(--threecolor);
 	padding-bottom: 240px;
 	border-radius: 15px;
+}
+.about-light {
+	margin-bottom: 60px;
 }
 .hero-inner__title {
 	padding-top: 20px;
@@ -664,6 +668,23 @@ i {
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
+	.benefits-box {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 10px;
+	}
+	.benefits-img {
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 22px;
+		width: 50px;
+		height: 50px;
+	}
+	.icon-benefits {
+		font-size: 50px;
+	}
 }
 @media (max-width: 650px) {
 	.hero-card__first,
@@ -692,6 +713,14 @@ i {
 	}
 	.hero-inner__title {
 		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	.light-offer {
+		padding-bottom: 190px;
+	}
+	.offer-inner__img {
+		margin-top: 10px;
+		width: 35px;
 	}
 	.hero-inner__svg {
 		padding-top: 10px;
@@ -719,5 +748,23 @@ i {
 	.contact-item,
 	.about-link {
 		font-size: 14px;
+	}
+}
+@media (max-width: 432px) {
+
+}
+@media (max-width: 362px) {
+	.section-text {
+		font-size: 16px;
+	}
+	.hero-inner__title {
+		font-size: 18px;
+	}
+	.offer-inner__img {
+		width: 25px;
+		margin-top: 1px;
+	}
+	.light-offer {
+		padding-bottom: 160px;
 	}
 }
